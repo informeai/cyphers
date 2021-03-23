@@ -1,3 +1,3 @@
 # Cyphers
 ## Cryptography directory
-[Xor](/informeai/cyphers/xor)
+[Xor](https://github.com/informeai/cyphers/xor)
