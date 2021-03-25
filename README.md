@@ -1,4 +1,4 @@
 # Cyphers
 ## Cryptography directory
-[Xor](/xor)
-[Caesar](/caesar)
+* [Xor](/xor)
+* [Caesar](/caesar)

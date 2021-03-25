@@ -7,6 +7,10 @@ import (
 
 type Caesar struct{}
 
+func New() *Caesar {
+	return &Caesar{}
+}
+
 func (c Caesar) Encrypt(msg string, hot int) (string, error) {
 	if msg != "" && hot != 0 {
 

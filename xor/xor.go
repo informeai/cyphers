@@ -8,6 +8,10 @@ import (
 
 type Xor struct{}
 
+func New() *Xor {
+	return &Xor{}
+}
+
 func (x Xor) Encrypt(msg string, key string) (string, error) {
 	var hash []byte
 	if msg != "" && key != "" && len(key) > 0 {

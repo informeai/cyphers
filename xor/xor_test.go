@@ -17,7 +17,7 @@ func TestMsgOrKeyEmpty(t *testing.T) {
 }
 
 func TestEncrypt(t *testing.T) {
-	x := Xor{}
+	x := New()
 	hash, err := x.Encrypt(msg, key)
 	if err != nil {
 		t.Errorf("error: %v\n", err)
@@ -32,7 +32,7 @@ func TestEncrypt(t *testing.T) {
 }
 
 func TestDecrypt(t *testing.T) {
-	x := Xor{}
+	x := New()
 	hash, err := x.Decrypt(hash, key)
 	if err != nil {
 		t.Errorf("error: %v\n", err)

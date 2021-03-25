@@ -12,7 +12,7 @@ func TestMsgOrHotIsEmpty(t *testing.T) {
 	}
 }
 func TestEncrypt(t *testing.T) {
-	caesar := Caesar{}
+	caesar := New()
 	text, err := caesar.Encrypt(msg, hot)
 	if err != nil {
 		t.Error("failed encrypted")
@@ -22,7 +22,7 @@ func TestEncrypt(t *testing.T) {
 	}
 }
 func TestDecrypt(t *testing.T) {
-	caesar := Caesar{}
+	caesar := New()
 	text, err := caesar.Decrypt(cypher, hot)
 	if err != nil {
 		t.Error("failed decrypted")
